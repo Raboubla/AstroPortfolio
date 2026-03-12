@@ -1,3 +1,5 @@
+import type { ImageMetadata } from "astro";
+
 export interface SiteConfig extends HeaderProps {
   title: string;
   description: string;
@@ -33,17 +35,17 @@ export interface ExperienceProps {
 export interface ProjectProps {
   name: string;
   summary: string;
-  image: string;
+  image: ImageMetadata | string;
   linkPreview?: string;
   linkSource?: string;
 }
 
 export interface AboutProps {
   description: string;
-  image: string;
+  image: ImageMetadata | string;
 }
 
 export interface HeaderProps {
-  siteLogo: string;
+  siteLogo: ImageMetadata | string;
   navLinks: { text: string; href: string }[];
 }
