@@ -20,8 +20,23 @@ const { name, specialty, summary, email } = Astro.props;
     {summary}
   </p>
 
-  <a
-    class="inline-block rounded-full bg-primary px-8 py-5 text-sm leading-5 font-medium text-[#fff]"
-    href={`mailto:${email}`}>Get in Touch</a
-  >
+  <div class="flex flex-wrap gap-4">
+    <a
+      class="inline-flex items-center rounded-full bg-primary px-8 py-5 text-sm leading-5 font-medium text-[#fff] transition-all duration-300 hover:bg-primary/85 hover:shadow-lg hover:shadow-primary/25"
+      href={`mailto:${email}`}>Get in Touch</a
+    >
+    <a
+      class="group inline-flex items-center gap-2 rounded-full border border-primary/50 px-8 py-5 text-sm leading-5 font-medium text-primary transition-all duration-300 hover:border-primary hover:bg-primary/10 hover:shadow-lg hover:shadow-primary/15"
+      href="/Cvv5.pdf"
+      download="Herimbola_RAZANAKOTO_CV.pdf"
+    >
+      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="transition-transform duration-300 group-hover:translate-y-0.5">
+        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+        <polyline points="7 10 12 15 17 10"/>
+        <line x1="12" y1="15" x2="12" y2="3"/>
+      </svg>
+      Download CV
+    </a>
+  </div>
 </section>
+

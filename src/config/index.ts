@@ -16,7 +16,9 @@ export const SITE_CONFIG: SiteConfig = {
   siteLogo: pdpMini,
   navLinks: [
     { text: "Experience", href: "#experience" },
+    { text: "Skills", href: "#skills" },
     { text: "Projects", href: "#projects" },
+    { text: "Languages", href: "#languages" },
     { text: "About", href: "#about" },
   ],
   socialLinks: [
@@ -69,33 +71,70 @@ export const SITE_CONTENT: SiteContent = {
       ]
     },
   ],
+  skills: [
+    {
+      name: "Programming Languages",
+      icon: "code",
+      items: ["Java", "PHP", "C#", "C", "JavaScript", "Python", "HTML/CSS", "SQL", "Dart"],
+    },
+    {
+      name: "Frontend",
+      icon: "layout",
+      items: ["VueJs", "React", "Angular JS", "Astro"],
+    },
+    {
+      name: "Backend",
+      icon: "server",
+      items: ["Spring Boot", "Laravel", "NestJS"],
+    },
+    {
+      name: "Database",
+      icon: "database",
+      items: ["Oracle", "PostgreSQL", "MySQL", "SQL Server", "MongoDB", "Firebase"],
+    },
+    {
+      name: "Mobile",
+      icon: "smartphone",
+      items: ["React Native", "Expo Go", "Flutter"],
+    },
+    {
+      name: "Tools & DevOps",
+      icon: "tool",
+      items: ["Git/GitHub", "Docker", "Figma", "Adobe XD", "Photoshop", "PostGIS", "WSL", "Airflow"],
+    },
+  ],
   projects: [
     {
       name: "Bio Mada Ecosystem",
-      summary: "A professional showcase and digital storefront featuring a comprehensive product catalog and brand identity for Bio Mada and Bio Mada Sakafo.",
+      summary: "Digital storefront and product catalog for Bio Mada and Bio Mada Sakafo.",
       linkPreview: "https://raboubla.github.io/bio-mada/",
       linkSource: "https://github.com/Raboubla/bio-mada.git",
       image: bioMada,
     },
     {
       name: "Stefan Mall Management System",
-      summary: "A multi-user management platform for shopping centers with dedicated interfaces for administrators, shop owners, and customers.",
+      summary: "Multi-user platform for managing shopping centers (admins, shops, customers).",
       linkPreview: "https://m1p13mean-herimbola-stefan.vercel.app",
       linkSource: "https://github.com/Raboubla/mean_frontend.git",
       image: mall,
     },
     {
       name: "Java Framework",
-      summary: "A custom-built Java framework designed to streamline development through an integrated ORM engine and centralized error handling.",
+      summary: "Custom Java framework with ORM engine and centralized error handling.",
       linkSource: "https://github.com/Raboubla/Fram.git",
       image: fram,
     },
     {
       name: "Intercessor Connect",
-      summary: "A location-based mobile application enabling users to geolocate Christian intercessors and prayer sites via an interactive map.",
+      summary: "Location-based app to find intercessors and prayer sites on a map.",
       linkSource: "https://github.com/Finoana1822/app-map-intercesseur.git",
       image: intercessor,
     },
+  ],
+  languages: [
+    { name: "Malagasy", level: "Native", percentage: 100 },
+    { name: "Français", level: "Fluent", percentage: 90 },
+    { name: "English", level: "Intermediate", percentage: 60 },
   ],
   about: {
     description: `
@@ -105,4 +144,3 @@ export const SITE_CONTENT: SiteContent = {
   },
 };
 
-// #6dff99ff

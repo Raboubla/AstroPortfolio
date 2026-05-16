@@ -55,3 +55,96 @@
     }
   }
 }
+
+/* ===== Scroll-reveal animations ===== */
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(32px);
+  transition: opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1),
+              transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.animate-on-scroll.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Stagger children animation for skill cards */
+.stagger-children .stagger-item {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.5s cubic-bezier(0.22, 1, 0.36, 1),
+              transform 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.stagger-children.is-visible .stagger-item {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Generate stagger delays for up to 8 items */
+.stagger-children.is-visible .stagger-item:nth-child(1) { transition-delay: 0.05s; }
+.stagger-children.is-visible .stagger-item:nth-child(2) { transition-delay: 0.1s; }
+.stagger-children.is-visible .stagger-item:nth-child(3) { transition-delay: 0.15s; }
+.stagger-children.is-visible .stagger-item:nth-child(4) { transition-delay: 0.2s; }
+.stagger-children.is-visible .stagger-item:nth-child(5) { transition-delay: 0.25s; }
+.stagger-children.is-visible .stagger-item:nth-child(6) { transition-delay: 0.3s; }
+.stagger-children.is-visible .stagger-item:nth-child(7) { transition-delay: 0.35s; }
+.stagger-children.is-visible .stagger-item:nth-child(8) { transition-delay: 0.4s; }
+
+/* ===== Language progress bar fill ===== */
+.progress-fill {
+  width: 0%;
+  transition: width 1.2s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.is-visible .progress-fill {
+  /* width set via inline style */
+}
+
+/* ===== WhatsApp floating button pulse ===== */
+@keyframes pulse-ring {
+  0% {
+    transform: scale(1);
+    opacity: 0.6;
+  }
+  100% {
+    transform: scale(1.8);
+    opacity: 0;
+  }
+}
+
+.whatsapp-pulse::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  background: #25D366;
+  animation: pulse-ring 2s cubic-bezier(0.22, 1, 0.36, 1) infinite;
+  z-index: -1;
+}
+
+/* ===== Smooth transitions for interactive elements ===== */
+a, button {
+  transition: all 0.3s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* ===== Respect prefers-reduced-motion ===== */
+@media (prefers-reduced-motion: reduce) {
+  .animate-on-scroll {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+  .stagger-children .stagger-item {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+  .progress-fill {
+    transition: none;
+  }
+  .whatsapp-pulse::before {
+    animation: none;
+  }
+}

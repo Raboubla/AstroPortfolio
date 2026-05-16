@@ -13,7 +13,9 @@ export interface SiteConfig extends HeaderProps {
 export interface SiteContent {
   hero: HeroProps;
   experience: ExperienceProps[];
+  skills: SkillCategory[];
   projects: ProjectProps[];
+  languages: LanguageProps[];
   about: AboutProps;
 }
 
@@ -30,6 +32,18 @@ export interface ExperienceProps {
   startDate: string;
   endDate: string;
   summary: string | string[];
+}
+
+export interface SkillCategory {
+  name: string;
+  icon: string;
+  items: string[];
+}
+
+export interface LanguageProps {
+  name: string;
+  level: string;
+  percentage: number;
 }
 
 export interface ProjectProps {
