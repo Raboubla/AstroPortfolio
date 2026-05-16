@@ -5,6 +5,7 @@ import "@fontsource-variable/gabarito";
 import { SITE_CONFIG } from "@config";
 import Footer from "@components/Footer.astro";
 import WhatsAppButton from "@components/WhatsAppButton.astro";
+import InstallPWA from "@components/InstallPWA.astro";
 
 const {
   title,
@@ -58,6 +59,7 @@ const ogImgUrl = canonicalURL + socialImage;
     </main>
     <Footer author={author} socialLinks={socialLinks} />
     <WhatsAppButton />
+    <InstallPWA />
 
     <!-- Scroll-reveal observer for all animate-on-scroll sections -->
     <script>

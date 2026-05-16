@@ -1,0 +1,76 @@
+---
+/**
+ * PWA Install Notification
+ * Appears when the browser fires 'beforeinstallprompt'.
+ */
+---
+
+<div id="pwa-install-banner" class="fixed bottom-6 left-6 z-50 flex max-w-sm translate-y-10 scale-95 items-center gap-4 rounded-2xl border border-neutral/20 bg-[#111827]/95 p-4 opacity-0 shadow-2xl shadow-black/50 backdrop-blur-md transition-all duration-500 ease-out sm:bottom-8 sm:left-8 pointer-events-none">
+  <div class="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-xl bg-primary/20 text-primary">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+  </div>
+  <div class="flex-1">
+    <h4 class="text-sm font-semibold text-white" data-i18n="pwa.title">Installer l'Application</h4>
+    <p class="mt-0.5 text-xs text-white/70" data-i18n="pwa.desc">Installez le portfolio pour un accès rapide et hors-ligne.</p>
+  </div>
+  <button id="pwa-install-btn" class="flex-shrink-0 rounded-lg bg-primary px-3 py-2 text-xs font-semibold text-white transition-colors hover:bg-primary/80">
+    <span data-i18n="pwa.btn">Installer</span>
+  </button>
+  <button id="pwa-close-btn" class="absolute -right-2 -top-2 flex h-6 w-6 items-center justify-center rounded-full border border-neutral/20 bg-black text-neutral transition-colors hover:text-white">
+    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+  </button>
+</div>
+
+<script>
+  let deferredPrompt: any;
+  const banner = document.getElementById('pwa-install-banner');
+  const installBtn = document.getElementById('pwa-install-btn');
+  const closeBtn = document.getElementById('pwa-close-btn');
+
+  window.addEventListener('beforeinstallprompt', (e) => {
+    // Prevent Chrome from automatically showing the prompt
+    e.preventDefault();
+    // Stash the event so it can be triggered later
+    deferredPrompt = e;
+    
+    // Check if user previously dismissed it
+    if (localStorage.getItem('pwa-dismissed') !== 'true') {
+      // Show the banner after a short delay so it's not too aggressive
+      setTimeout(() => {
+        banner?.classList.remove('translate-y-10', 'scale-95', 'opacity-0', 'pointer-events-none');
+        banner?.classList.add('translate-y-0', 'scale-100', 'opacity-100');
+      }, 2500);
+    }
+  });
+
+  installBtn?.addEventListener('click', async () => {
+    if (deferredPrompt) {
+      // Show the browser's install prompt
+      deferredPrompt.prompt();
+      // Wait for the user to respond to the prompt
+      const { outcome } = await deferredPrompt.userChoice;
+      console.log(`User response to the install prompt: ${outcome}`);
+      // We've used the prompt, and can't use it again, throw it away
+      deferredPrompt = null;
+      hideBanner();
+    }
+  });
+
+  closeBtn?.addEventListener('click', () => {
+    hideBanner();
+    // Remember that the user dismissed it
+    localStorage.setItem('pwa-dismissed', 'true');
+  });
+
+  function hideBanner() {
+    banner?.classList.remove('translate-y-0', 'scale-100', 'opacity-100');
+    banner?.classList.add('translate-y-10', 'scale-95', 'opacity-0', 'pointer-events-none');
+  }
+
+  // Also hide banner if successfully installed directly from browser UI
+  window.addEventListener('appinstalled', () => {
+    hideBanner();
+    deferredPrompt = null;
+    console.log('PWA was installed');
+  });
+</script>

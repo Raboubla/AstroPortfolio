@@ -85,6 +85,11 @@ export const translations: Record<Locale, Record<string, string>> = {
     // WhatsApp
     "whatsapp.tooltip": "Contactez-moi",
 
+    // PWA Install
+    "pwa.title": "Installer l'Application",
+    "pwa.desc": "Installez le portfolio pour un accès rapide et hors-ligne.",
+    "pwa.btn": "Installer",
+
     // Footer
     "footer.copyright": "© {year}",
   },
@@ -165,6 +170,11 @@ export const translations: Record<Locale, Record<string, string>> = {
 
     // WhatsApp
     "whatsapp.tooltip": "Contact me",
+
+    // PWA Install
+    "pwa.title": "Install App",
+    "pwa.desc": "Install the portfolio for fast, offline access.",
+    "pwa.btn": "Install",
 
     // Footer
     "footer.copyright": "© {year}",
