@@ -17,7 +17,7 @@ export const translations: Record<Locale, Record<string, string>> = {
     "nav.about": "À propos",
 
     // Hero
-    "hero.specialty": "développeur full-stack orienté backend",
+    "hero.specialty": "développeur Java full-stack orienté backend",
     "hero.summary":
       "Salut, je suis Herimbola — Bienvenue ! Développeur Java et Fullstack passionné par le code et les technologies émergentes. Je cherche constamment de nouveaux défis dans des environnements dynamiques où je peux renforcer mes compétences techniques et appliquer mes connaissances dans des projets concrets. Addict au gaming et au dev — je construis, je casse, j'apprends et je grandis.",
     "hero.cta": "Me contacter",
@@ -103,7 +103,7 @@ export const translations: Record<Locale, Record<string, string>> = {
     "nav.about": "About",
 
     // Hero
-    "hero.specialty": "full-stack backend-oriented developer",
+    "hero.specialty": "Java full-stack backend-oriented developer",
     "hero.summary":
       "Hi, I'm Herimbola — Welcome! Java Developer and Fullstack enthusiast, passionate about coding and emerging technologies. I'm constantly seeking new challenges in dynamic environments where I can sharpen my technical skills and apply my knowledge in real-world projects. Addict to game and dev — I build, I break, I learn, and I grow.",
     "hero.cta": "Get in Touch",
