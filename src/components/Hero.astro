@@ -2,7 +2,7 @@
 import type { HeroProps } from "@types";
 type Props = HeroProps;
 
-const { name, specialty, summary, email } = Astro.props;
+const { name, email } = Astro.props;
 ---
 
 <section class="py-24 md:py-32" id="#hero">
@@ -14,16 +14,16 @@ const { name, specialty, summary, email } = Astro.props;
   <p
     class="mb-9 font-serif text-4xl leading-[46px] font-bold tracking-tighter text-primary sm:text-5xl md:text-6xl"
   >
-    {specialty}
+    <span data-i18n="hero.specialty">développeur full-stack orienté backend</span>
   </p>
   <p class="mb-16 text-base font-normal text-neutral md:text-lg">
-    {summary}
+    <span data-i18n="hero.summary">Salut, je suis Herimbola — Bienvenue ! Développeur Java et Fullstack passionné par le code et les technologies émergentes. Je cherche constamment de nouveaux défis dans des environnements dynamiques où je peux renforcer mes compétences techniques et appliquer mes connaissances dans des projets concrets. Addict au gaming et au dev — je construis, je casse, j'apprends et je grandis.</span>
   </p>
 
   <div class="flex flex-wrap gap-4">
     <a
       class="inline-flex items-center rounded-full bg-primary px-8 py-5 text-sm leading-5 font-medium text-[#fff] transition-all duration-300 hover:bg-primary/85 hover:shadow-lg hover:shadow-primary/25"
-      href={`mailto:${email}`}>Get in Touch</a
+      href={`mailto:${email}`}><span data-i18n="hero.cta">Me contacter</span></a
     >
     <a
       class="group inline-flex items-center gap-2 rounded-full border border-primary/50 px-8 py-5 text-sm leading-5 font-medium text-primary transition-all duration-300 hover:border-primary hover:bg-primary/10 hover:shadow-lg hover:shadow-primary/15"
@@ -35,8 +35,7 @@ const { name, specialty, summary, email } = Astro.props;
         <polyline points="7 10 12 15 17 10"/>
         <line x1="12" y1="15" x2="12" y2="3"/>
       </svg>
-      Download CV
+      <span data-i18n="hero.download">Télécharger le CV</span>
     </a>
   </div>
 </section>
-

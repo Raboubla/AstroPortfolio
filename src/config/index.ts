@@ -8,18 +8,18 @@ import intercessor from "../assets/img/intercessor.jpeg"
 
 
 export const SITE_CONFIG: SiteConfig = {
-  title: "Herimbola RAZANAKOTO — full-stack backend-oriented developer",
+  title: "Herimbola RAZANAKOTO — développeur full-stack orienté backend",
   author: "Herimbola RAZANAKOTO",
   description:
-    "Hi, I'm Herimbola — Welcome! Java Developer and Fullstack enthusiast, passionate about coding and emerging technologies. I'm constantly seeking new challenges in dynamic environments where I can sharpen my technical skills and apply my knowledge in real-world projects. Addict to game and dev — I build, I break, I learn, and I grow.",
-  lang: "en",
+    "Salut, je suis Herimbola — Bienvenue ! Développeur Java et Fullstack passionné par le code et les technologies émergentes.",
+  lang: "fr",
   siteLogo: pdpMini,
   navLinks: [
-    { text: "Experience", href: "#experience" },
-    { text: "Skills", href: "#skills" },
-    { text: "Projects", href: "#projects" },
-    { text: "Languages", href: "#languages" },
-    { text: "About", href: "#about" },
+    { text: "Expériences", href: "#experience" },
+    { text: "Compétences", href: "#skills" },
+    { text: "Projets", href: "#projects" },
+    { text: "Langues", href: "#languages" },
+    { text: "À propos", href: "#about" },
   ],
   socialLinks: [
     { text: "WhatsApp", href: "https://wa.me/261346819543" },

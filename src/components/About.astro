@@ -8,9 +8,11 @@ type Props = AboutProps & Pick<HeroProps, "name">;
 const { description, image, name } = Astro.props;
 ---
 
-<Section text="About Me" href="about">
+<Section text="À propos de moi" href="about" i18nKey="section.about">
   <div class="flex flex-col items-center gap-12 md:flex-row md:gap-8">
-    <p class="w-auto text-base text-neutral md:pr-5">{description}</p>
+    <p class="w-auto text-base text-neutral md:pr-5">
+      <span data-i18n="about.description">Je suis un développeur Java et Full-Stack passionné, avec un fort intérêt pour la création d'applications web modernes et l'exploration des technologies émergentes. J'aime concevoir et développer des systèmes front-end et back-end, transformant les idées en solutions fonctionnelles et efficaces. Je suis toujours avide d'apprendre, d'améliorer mes compétences techniques et de travailler sur des projets stimulants qui me permettent de grandir en tant que développeur tout en livrant des logiciels de haute qualité.</span>
+    </p>
     <div
       class="h-80 w-64 flex-shrink-0 rotate-[5deg] bg-white p-4 md:rotate-[7deg]"
     >

@@ -1,0 +1,99 @@
+---
+/**
+ * Language toggle button with SVG flags.
+ * Defaults to FR, switches directly to EN and back on click.
+ */
+---
+
+<button
+  type="button"
+  id="lang-switch-btn"
+  aria-label="Switch language"
+  class="flex cursor-pointer items-center gap-2 rounded-full border border-neutral/30 bg-white/[0.05] px-3 py-1.5 text-xs font-medium text-white backdrop-blur-sm transition-all duration-300 hover:border-primary/50 hover:bg-white/[0.08]"
+>
+  <div
+    id="flag-display"
+    class="pointer-events-none flex h-3 w-4 items-center justify-center overflow-hidden rounded-[2px]"
+  >
+    <!-- Default FR SVG -->
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3 2" class="h-full w-full object-cover">
+      <rect width="1" height="2" fill="#0055A4"></rect>
+      <rect x="1" width="1" height="2" fill="#FFFFFF"></rect>
+      <rect x="2" width="1" height="2" fill="#EF4135"></rect>
+    </svg>
+  </div>
+  <span id="lang-label" class="pointer-events-none tracking-wide uppercase">FR</span>
+</button>
+
+<script>
+  import { translations, defaultLocale } from "../config/i18n";
+  import type { Locale } from "../config/i18n";
+
+  function initLangSwitch() {
+    const btn = document.getElementById("lang-switch-btn");
+    const flagDisplay = document.getElementById("flag-display");
+    const langLabel = document.getElementById("lang-label");
+
+    if (!btn) return;
+
+    // Prevent duplicate event listeners
+    if (btn.hasAttribute('data-lang-initialized')) return;
+    btn.setAttribute('data-lang-initialized', 'true');
+
+    const svgs: Record<Locale, string> = {
+      fr: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3 2" class="h-full w-full object-cover"><rect width="1" height="2" fill="#0055A4"></rect><rect x="1" width="1" height="2" fill="#FFFFFF"></rect><rect x="2" width="1" height="2" fill="#EF4135"></rect></svg>`,
+      en: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 30" class="h-full w-full object-cover"><clipPath id="s_js"><path d="M0,0 v30 h60 v-30 z"/></clipPath><clipPath id="t_js"><path d="M30,15 h30 v15 z v15 h-30 z h-30 v-15 z v-15 h30 z"/></clipPath><g clip-path="url(#s_js)"><path d="M0,0 v30 h60 v-30 z" fill="#012169"/><path d="M0,0 L60,30 M60,0 L0,30" stroke="#fff" stroke-width="6"/><path d="M0,0 L60,30 M60,0 L0,30" clip-path="url(#t_js)" stroke="#C8102E" stroke-width="4"/><path d="M30,0 v30 M0,15 h60" stroke="#fff" stroke-width="10"/><path d="M30,0 v30 M0,15 h60" stroke="#C8102E" stroke-width="6"/></g></svg>`,
+    };
+
+    const labels: Record<Locale, string> = { fr: "FR", en: "EN" };
+
+    // Validate stored language to prevent crashes from old/invalid localStorage values
+    let savedLang = localStorage.getItem("lang");
+    if (savedLang !== "fr" && savedLang !== "en") {
+      savedLang = defaultLocale;
+    }
+    
+    let currentLang: Locale = savedLang as Locale;
+
+    function applyLanguage(lang: Locale) {
+      try {
+        currentLang = lang;
+        localStorage.setItem("lang", lang);
+        document.documentElement.setAttribute("lang", lang);
+
+        // Update button display
+        if (flagDisplay) flagDisplay.innerHTML = svgs[lang];
+        if (langLabel) langLabel.textContent = labels[lang];
+
+        // Update all translatable text
+        const t = translations[lang];
+        if (!t) return; // Safeguard
+
+        document.querySelectorAll<HTMLElement>("[data-i18n]").forEach((el) => {
+          const key = el.dataset.i18n;
+          if (key && t[key] !== undefined) {
+            el.innerHTML = t[key]; // Allow HTML in translations if needed
+          }
+        });
+      } catch (err) {
+        console.error("Error applying language:", err);
+      }
+    }
+
+    // Toggle directly on click
+    btn.addEventListener("click", () => {
+      const next: Locale = currentLang === "fr" ? "en" : "fr";
+      applyLanguage(next);
+    });
+
+    // Apply saved preference on load
+    applyLanguage(currentLang);
+  }
+
+  // Ensure DOM is ready (in case of async load or view transitions)
+  document.addEventListener('DOMContentLoaded', initLangSwitch);
+  // Fallback in case DOMContentLoaded already fired
+  if (document.readyState === 'interactive' || document.readyState === 'complete') {
+    initLangSwitch();
+  }
+</script>

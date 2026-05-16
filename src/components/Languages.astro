@@ -7,12 +7,18 @@ interface Props {
 }
 
 const { languages } = Astro.props;
+
+const frLevels: Record<number, string> = {
+  0: "Natif",
+  1: "Courant",
+  2: "Intermédiaire",
+};
 ---
 
-<Section text="Languages" href="languages">
+<Section text="Langues" href="languages" i18nKey="section.languages">
   <div class="space-y-8" id="languages-list">
     {
-      languages.map((lang) => (
+      languages.map((lang, idx) => (
         <div class="group">
           <div class="mb-3 flex items-center justify-between">
             <div class="flex items-center gap-3">
@@ -24,7 +30,7 @@ const { languages } = Astro.props;
               <h3 class="font-serif text-xl font-semibold text-white">{lang.name}</h3>
             </div>
             <span class="rounded-full border border-primary/30 bg-primary/10 px-3 py-1 text-xs font-medium text-primary">
-              {lang.level}
+              <span data-i18n={`lang.${idx}.level`}>{frLevels[idx] || lang.level}</span>
             </span>
           </div>
           <div class="h-3 w-full overflow-hidden rounded-full bg-white/[0.06]">
@@ -52,7 +58,6 @@ const { languages } = Astro.props;
             const bars = entry.target.querySelectorAll<HTMLElement>('.progress-fill');
             bars.forEach((bar) => {
               const targetWidth = bar.dataset.width || '0%';
-              // Small delay to ensure the transition triggers
               requestAnimationFrame(() => {
                 bar.style.width = targetWidth;
               });
