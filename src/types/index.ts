@@ -14,7 +14,7 @@ export interface SiteContent {
   hero: HeroProps;
   experience: ExperienceProps[];
   skills: SkillCategory[];
-  projects: ProjectProps[];
+  projects: ProjectCategory[];
   languages: LanguageProps[];
   about: AboutProps;
 }
@@ -46,10 +46,16 @@ export interface LanguageProps {
   percentage: number;
 }
 
+export interface ProjectCategory {
+  title: string;
+  projects: ProjectProps[];
+}
+
 export interface ProjectProps {
   name: string;
   summary: string;
-  image: ImageMetadata | string;
+  image?: ImageMetadata | string;
+  i18nKey?: string;
   linkPreview?: string;
   linkSource?: string;
 }

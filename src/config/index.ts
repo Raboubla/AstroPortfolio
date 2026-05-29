@@ -4,11 +4,14 @@ import pdpMini from "../assets/img/pdp-Mini.jpg"
 import bioMada from "../assets/img/bio-mada.png"
 import fram from "../assets/img/framework.jpg"
 import mall from "../assets/img/stefan-mall.png"
-import intercessor from "../assets/img/intercessor.jpeg"
+import steg from "../assets/img/steganographie.jpg"
+import holy from "../assets/img/holy.jpg"
+import hay from "../assets/img/hayPolitika.jpg"
+
 
 
 export const SITE_CONFIG: SiteConfig = {
-  title: "Herimbola RAZANAKOTO — développeur full-stack orienté backend",
+  title: "Herimbola RAZANAKOTO — full-stack backend java / typescript",
   author: "Herimbola RAZANAKOTO",
   description:
     "Salut, je suis Herimbola — Bienvenue ! Développeur Java et Fullstack passionné par le code et les technologies émergentes.",
@@ -105,31 +108,49 @@ export const SITE_CONTENT: SiteContent = {
   ],
   projects: [
     {
-      name: "Bio Mada Ecosystem",
-      summary: "Digital storefront and product catalog for Bio Mada and Bio Mada Sakafo.",
-      linkPreview: "https://raboubla.github.io/bio-mada/",
-      linkSource: "https://github.com/Raboubla/bio-mada.git",
-      image: bioMada,
+      title: "Software Engineer - Ichtus IT",
+      projects: [
+        {
+          name: "Holy Appli",
+          summary: "Plateforme digitale de traçabilité et certification agricole SPG. Écosystème numérique complet avec backoffice Next.js et application mobile Flutter.",
+          i18nKey: "proj.holy.summary",
+          image: holy
+        },
+        {
+          name: "Hay Politika",
+          summary: "Plateforme digitale complète (Back Office, Front Office, Mobile) pour une école. Backend développé en NestJS avec conception de l'architecture serveur et des APIs REST.",
+          i18nKey: "proj.hay.summary",
+          image: hay
+        }
+      ]
     },
     {
-      name: "Stefan Mall Management System",
-      summary: "Multi-user platform for managing shopping centers (admins, shops, customers).",
-      linkPreview: "https://m1p13mean-herimbola-stefan.vercel.app",
-      linkSource: "https://github.com/Raboubla/mean_frontend.git",
-      image: mall,
-    },
-    {
-      name: "Java Framework",
-      summary: "Custom Java framework with ORM engine and centralized error handling.",
-      linkSource: "https://github.com/Raboubla/Fram.git",
-      image: fram,
-    },
-    {
-      name: "Intercessor Connect",
-      summary: "Location-based app to find intercessors and prayer sites on a map.",
-      linkSource: "https://github.com/Finoana1822/app-map-intercesseur.git",
-      image: intercessor,
-    },
+      title: "Projets personnels et professionnels",
+      projects: [
+        {
+          name: "Écosystème Digital \"Stefan Mall\"",
+          summary: "Plateforme web multi-tenant (MEAN stack) dédiée à la gestion d'un centre commercial avec tableau de bord analytique et interface optimisée.",
+          linkPreview: "https://m1p13mean-herimbola-stefan.vercel.app",
+          linkSource: "https://github.com/Raboubla/mean_frontend.git",
+          image: mall,
+          i18nKey: "proj.stefan.summary"
+        },
+        {
+          name: "Outil de Stéganographie",
+          summary: "Développement d'un outil en Python permettant de dissimuler des messages texte dans des images via la modification des bits les moins significatifs (LSB).",
+          linkSource: "https://github.com/Raboubla/Steganographie.git",
+          image: steg,
+          i18nKey: "proj.stegano.summary"
+        },
+        {
+          name: "Framework Java by Raboubla",
+          summary: "Développement d'un framework Java from scratch intégrant gestion des erreurs, sécurité, ORM et moteur de templates.",
+          linkSource: "https://github.com/Raboubla/Fram.git",
+          image: fram,
+          i18nKey: "proj.fram.summary"
+        }
+      ]
+    }
   ],
   languages: [
     { name: "Malagasy", level: "Native", percentage: 100 },

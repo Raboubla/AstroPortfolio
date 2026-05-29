@@ -4,6 +4,7 @@ import Hero from "@components/Hero.astro";
 import Layout from "@layouts/Layout.astro";
 import Experience from "@components/Experience.astro";
 import Skills from "@components/Skills.astro";
+import FrameworkHighlight from "@components/FrameworkHighlight.astro";
 import Projects from "@components/Projects.astro";
 import Languages from "@components/Languages.astro";
 import About from "@components/About.astro";
@@ -15,6 +16,7 @@ import "../styles/global.css";
   <Hero {...SITE_CONTENT.hero} />
   <Experience experience={SITE_CONTENT.experience} />
   <Skills skills={SITE_CONTENT.skills} />
+  <FrameworkHighlight />
   <Projects projects={SITE_CONTENT.projects} />
   <Languages languages={SITE_CONTENT.languages} />
   <About {...SITE_CONTENT.about} name={SITE_CONTENT.hero.name} />

@@ -17,9 +17,9 @@ export const translations: Record<Locale, Record<string, string>> = {
     "nav.about": "À propos",
 
     // Hero
-    "hero.specialty": "développeur Java full-stack orienté backend",
+    "hero.specialty": "Développeur Fullstack Java / TypeScript",
     "hero.summary":
-      "Salut, je suis Herimbola — Bienvenue ! Développeur Java et Fullstack passionné par le code et les technologies émergentes. Je cherche constamment de nouveaux défis dans des environnements dynamiques où je peux renforcer mes compétences techniques et appliquer mes connaissances dans des projets concrets. Addict au gaming et au dev — je construis, je casse, j'apprends et je grandis.",
+      "Salut, je suis Herimbola — Bienvenue ! Ingénieur logiciel Fullstack et étudiant en Master, je combine une expertise backend robuste (Java/Spring Boot, NestJS) et la maîtrise d'écosystèmes frontend modernes (React, Angular, Astro). Passionné par l'architecture logicielle et la sécurité, je conçois des applications web et mobiles performantes et sécurisées. Addict au gaming et au dev — je construis, je casse, j'apprends et je grandis.",
     "hero.cta": "Me contacter",
     "hero.download": "Télécharger le CV",
 
@@ -29,9 +29,10 @@ export const translations: Record<Locale, Record<string, string>> = {
     "section.projects": "Projets réalisés",
     "section.languages": "Langues",
     "section.about": "À propos de moi",
+    "section.framework": "Maîtrise Backend",
 
     // Experience — Ichtus IT
-    "exp.0.position": "Développeur Backend",
+    "exp.0.position": "Ingénieur logiciel Fullstack",
     "exp.0.startDate": "juillet 2025",
     "exp.0.endDate": "aujourd'hui",
     "exp.0.summary.0":
@@ -66,12 +67,23 @@ export const translations: Record<Locale, Record<string, string>> = {
     "skills.5.name": "Outils & DevOps",
 
     // Projects
-    "proj.0.summary": "Vitrine digitale et catalogue de produits pour Bio Mada et Bio Mada Sakafo.",
-    "proj.1.summary": "Plateforme multi-utilisateurs de gestion de centres commerciaux (admins, boutiques, clients).",
-    "proj.2.summary": "Framework Java personnalisé avec moteur ORM et gestion centralisée des erreurs.",
-    "proj.3.summary": "Application géolocalisée pour trouver des intercesseurs et lieux de prière sur une carte.",
+    "proj.holy.summary": "Plateforme digitale de traçabilité et certification agricole SPG. Écosystème numérique complet avec backoffice Next.js et application mobile Flutter.",
+    "proj.hay.summary": "Plateforme digitale complète (Back Office, Front Office, Mobile) pour une école. Backend développé en NestJS avec conception de l'architecture serveur et des APIs REST.",
+    "proj.stefan.summary": "Plateforme web multi-tenant (MEAN stack) dédiée à la gestion d'un centre commercial avec tableau de bord analytique et interface optimisée.",
+    "proj.stegano.summary": "Développement d'un outil en Python permettant de dissimuler des messages texte dans des images via la modification des bits les moins significatifs (LSB).",
+    "proj.fram.summary": "Développement d'un framework Java from scratch intégrant gestion des erreurs, sécurité, ORM et moteur de templates.",
     "projects.source": "Source",
     "projects.preview": "Aperçu",
+
+    // Framework Highlight
+    "framework.badge": "Framework Java Custom",
+    "framework.title": "Architecture sur mesure",
+    "framework.desc": "Pour consolider mon expertise backend, j'ai développé un framework Java de A à Z. Il intègre un moteur ORM personnalisé utilisant l'API de réflexion, ainsi qu'un système centralisé de gestion des exceptions. Ce projet démontre ma capacité à concevoir des architectures robustes et à maîtriser la programmation orientée objet avancée, au-delà de la simple utilisation d'outils existants.",
+    "framework.feat1": "ORM personnalisé",
+    "framework.feat2": "Gestion des exceptions",
+    "framework.feat3": "API de réflexion",
+    "framework.feat4": "Core sans dépendance",
+    "framework.github": "Voir sur GitHub",
 
     // Languages
     "lang.0.level": "Natif",
@@ -80,10 +92,9 @@ export const translations: Record<Locale, Record<string, string>> = {
 
     // About
     "about.description":
-      "Je suis un développeur Java et Full-Stack passionné, avec un fort intérêt pour la création d'applications web modernes et l'exploration des technologies émergentes. J'aime concevoir et développer des systèmes front-end et back-end, transformant les idées en solutions fonctionnelles et efficaces. Je suis toujours avide d'apprendre, d'améliorer mes compétences techniques et de travailler sur des projets stimulants qui me permettent de grandir en tant que développeur tout en livrant des logiciels de haute qualité.",
-
+      "Ingénieur logiciel Fullstack et étudiant en Master, je suis un développeur passionné par l'alliance entre la robustesse du backend (Java, Spring Boot, NestJS) et l'agilité des interfaces modernes (React, Next.js, Flutter). Mon quotidien consiste à transformer des concepts complexes en solutions scalables, sécurisées et performantes, du modèle de données jusqu'à l'expérience utilisateur. Toujours avide de défis techniques, je mets un point d'honneur à concevoir un code propre et de haute qualité, tout en continuant à explorer les technologies émergentes et l'architecture logicielle.",
     // WhatsApp
-    "whatsapp.tooltip": "Contactez-moi",
+    "whatsapp.tooltip": "Discutons de votre projet",
 
     // PWA Install
     "pwa.title": "Installer l'Application",
@@ -103,9 +114,9 @@ export const translations: Record<Locale, Record<string, string>> = {
     "nav.about": "About",
 
     // Hero
-    "hero.specialty": "Java full-stack backend-oriented developer",
+    "hero.specialty": "Fullstack Java / TypeScript Developer",
     "hero.summary":
-      "Hi, I'm Herimbola — Welcome! Java Developer and Fullstack enthusiast, passionate about coding and emerging technologies. I'm constantly seeking new challenges in dynamic environments where I can sharpen my technical skills and apply my knowledge in real-world projects. Addict to game and dev — I build, I break, I learn, and I grow.",
+      "Hi, I'm Herimbola — Welcome! Fullstack Software Engineer and Master's student, I combine a robust backend expertise (Java/Spring Boot, NestJS) with a mastery of modern frontend ecosystems (React, Angular, Astro). Passionate about software architecture and security, I build high-performance, secure web and mobile applications. Addict to gaming and dev — I build, I break, I learn, and I grow.",
     "hero.cta": "Get in Touch",
     "hero.download": "Download CV",
 
@@ -115,9 +126,10 @@ export const translations: Record<Locale, Record<string, string>> = {
     "section.projects": "Featured Projects",
     "section.languages": "Languages",
     "section.about": "About Me",
+    "section.framework": "Backend Mastery",
 
     // Experience — Ichtus IT
-    "exp.0.position": "Backend Developer",
+    "exp.0.position": "Fullstack Software Engineer",
     "exp.0.startDate": "july 2025",
     "exp.0.endDate": "present",
     "exp.0.summary.0":
@@ -152,12 +164,23 @@ export const translations: Record<Locale, Record<string, string>> = {
     "skills.5.name": "Tools & DevOps",
 
     // Projects
-    "proj.0.summary": "Digital storefront and product catalog for Bio Mada and Bio Mada Sakafo.",
-    "proj.1.summary": "Multi-user platform for managing shopping centers (admins, shops, customers).",
-    "proj.2.summary": "Custom Java framework with ORM engine and centralized error handling.",
-    "proj.3.summary": "Location-based app to find intercessors and prayer sites on a map.",
+    "proj.holy.summary": "Digital platform for SPG agricultural traceability and certification. Complete digital ecosystem with Next.js backoffice and Flutter mobile app.",
+    "proj.hay.summary": "Complete digital platform (Back Office, Front Office, Mobile) for a school. Backend developed in NestJS with server architecture design and REST APIs.",
+    "proj.stefan.summary": "Multi-tenant web platform (MEAN stack) dedicated to shopping mall management with an analytical dashboard and optimized interface.",
+    "proj.stegano.summary": "Development of a Python tool for hiding text messages within images by modifying the least significant bits (LSB).",
+    "proj.fram.summary": "Development of a Java framework from scratch integrating error handling, security, ORM, and a template engine.",
     "projects.source": "Source",
     "projects.preview": "Preview",
+
+    // Framework Highlight
+    "framework.badge": "Custom Java Framework",
+    "framework.title": "Bespoke Architecture",
+    "framework.desc": "To solidify my backend expertise, I developed a Java framework from scratch. It features a custom ORM engine utilizing the Reflection API, along with a centralized exception handling system. This project demonstrates my ability to design robust architectures and master advanced object-oriented programming, moving beyond the simple use of existing tools.",
+    "framework.feat1": "Custom ORM",
+    "framework.feat2": "Exception Handling",
+    "framework.feat3": "Reflection API",
+    "framework.feat4": "Zero-dependency Core",
+    "framework.github": "View on GitHub",
 
     // Languages
     "lang.0.level": "Native",
@@ -166,10 +189,9 @@ export const translations: Record<Locale, Record<string, string>> = {
 
     // About
     "about.description":
-      "I am a passionate Java and Full-Stack Developer with a strong interest in building modern web applications and exploring emerging technologies. I enjoy designing and developing both front-end and back-end systems, turning ideas into functional and efficient solutions. I am always eager to learn, improve my technical skills, and work on challenging projects that allow me to grow as a developer while delivering high-quality software.",
-
+      "As a Fullstack Software Engineer and Master's student, I am passionate about bridging the gap between robust backend architectures (Java, Spring Boot, NestJS) and agile modern interfaces (React, Next.js, Flutter). My daily routine involves transforming complex concepts into scalable, secure, and high-performance solutions, from data modeling down to the user experience. Always eager for technical challenges, I thrive on writing clean, high-quality code while continuously exploring emerging technologies and software architecture.",
     // WhatsApp
-    "whatsapp.tooltip": "Contact me",
+    "whatsapp.tooltip": "Let's discuss your project",
 
     // PWA Install
     "pwa.title": "Install App",
