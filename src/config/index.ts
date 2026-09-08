@@ -45,7 +45,7 @@ export const SITE_CONTENT: SiteContent = {
   experience: [
     {
       company: "Ichtus IT",
-      position: "Développeur Fullstack",
+      position: "Ingénieur logiciel Fullstack & DevSecOps",
       startDate: "juillet 2025",
       endDate: "septembre 2026",
       summary: [

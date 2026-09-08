@@ -32,7 +32,7 @@ export const translations: Record<Locale, Record<string, string>> = {
     "section.framework": "Maîtrise Backend & Sécurité",
 
     // Experience — Ichtus IT
-    "exp.0.position": "Développeur Fullstack",
+    "exp.0.position": "Ingénieur logiciel & DevSecOps",
     "exp.0.startDate": "juillet 2025",
     "exp.0.endDate": "septembre 2026",
     "exp.0.summary.0":
@@ -122,7 +122,7 @@ export const translations: Record<Locale, Record<string, string>> = {
     "section.framework": "Backend & Security Mastery",
 
     // Experience — Ichtus IT
-    "exp.0.position": "Fullstack Developer",
+    "exp.0.position": "Software Ingeneer & DevSecOps",
     "exp.0.startDate": "july 2025",
     "exp.0.endDate": "september 2026",
     "exp.0.summary.0":
