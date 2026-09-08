@@ -2,7 +2,7 @@
 import Section from "./Section.astro";
 ---
 
-<Section text="Maîtrise Backend" href="framework" i18nKey="section.framework">
+<Section text="Maîtrise Backend & Sécurité" href="framework" i18nKey="section.framework">
   <div class="relative overflow-hidden rounded-3xl border border-primary/30 bg-gradient-to-br from-[#1c232d] to-black p-5 sm:p-8 md:p-12 shadow-[0_0_40px_rgba(var(--color-primary),0.15)]">
     <!-- Glow effect -->
     <div class="absolute -top-24 -right-24 h-64 w-64 rounded-full bg-primary/20 blur-[80px]"></div>
@@ -11,17 +11,17 @@ import Section from "./Section.astro";
       <div class="min-w-0">
         <div class="mb-4 inline-flex items-center rounded-full border border-primary/50 bg-primary/10 px-3 sm:px-4 py-1.5 text-xs sm:text-sm font-medium text-primary">
           <svg class="mr-2 h-4 w-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
-          <span data-i18n="framework.badge">Framework Java Custom</span>
+          <span data-i18n="framework.badge">Framework Java Sécurisé</span>
         </div>
         
         <h3 class="mb-4 font-serif text-2xl sm:text-3xl font-bold text-white md:text-4xl leading-tight" data-i18n="framework.title">
-          Architecture sur mesure
+          Architecture sécurisée sur mesure
         </h3>
         
         <p class="mb-6 text-base sm:text-lg text-neutral/90 leading-relaxed" data-i18n="framework.desc">
-          Pour consolider mon expertise backend, j'ai développé un framework Java de A à Z. 
-          Il intègre un moteur ORM personnalisé utilisant l'API de réflexion, ainsi qu'un système centralisé de gestion des exceptions. 
-          Ce projet démontre ma capacité à concevoir des architectures robustes et à maîtriser la programmation orientée objet avancée, au-delà de la simple utilisation d'outils existants.
+          Pour consolider mon expertise backend et cybersécurité, j'ai développé un framework Java de A à Z. 
+          Il intègre un moteur ORM personnalisé utilisant l'API de réflexion, un module de sécurité intégré empêchant nativement les vulnérabilités d'injection, ainsi qu'un système de data sanitization et de gestion centralisée des exceptions. 
+          Ce projet démontre ma capacité à concevoir des architectures robustes et sécurisées dès la conception (Secure by Design).
         </p>
 
         <div class="mb-8 grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -31,15 +31,15 @@ import Section from "./Section.astro";
           </div>
           <div class="flex items-center text-sm text-neutral">
             <svg class="mr-2 h-5 w-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-            <span data-i18n="framework.feat2">Gestion des exceptions</span>
+            <span data-i18n="framework.feat2">Anti-injection natif</span>
           </div>
           <div class="flex items-center text-sm text-neutral">
             <svg class="mr-2 h-5 w-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-            <span data-i18n="framework.feat3">API de réflexion</span>
+            <span data-i18n="framework.feat3">Data Sanitization</span>
           </div>
           <div class="flex items-center text-sm text-neutral">
             <svg class="mr-2 h-5 w-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-            <span data-i18n="framework.feat4">Core sans dépendance</span>
+            <span data-i18n="framework.feat4">Secure by Design</span>
           </div>
         </div>
         
@@ -54,23 +54,23 @@ import Section from "./Section.astro";
           <div class="h-3 w-3 rounded-full bg-red-500"></div>
           <div class="h-3 w-3 rounded-full bg-yellow-500"></div>
           <div class="h-3 w-3 rounded-full bg-green-500"></div>
-          <span class="ml-2 text-xs text-neutral/70 font-mono">User.java</span>
+          <span class="ml-2 text-xs text-neutral/70 font-mono">UserController.java</span>
         </div>
         <div class="p-3 sm:p-4 overflow-hidden rounded-b-2xl">
-          <pre class="overflow-x-auto text-xs sm:text-sm font-mono text-neutral/90 pb-2"><code><span class="text-primary">@Entity</span>(tableName = <span class="text-green-400">"users"</span>)
-<span class="text-[#c678dd]">public class</span> <span class="text-[#e5c07b]">User</span> <span class="text-[#c678dd]">extends</span> <span class="text-[#e5c07b]">Model</span> &#123;
+          <pre class="overflow-x-auto text-xs sm:text-sm font-mono text-neutral/90 pb-2"><code><span class="text-primary">@Controller</span>
+<span class="text-[#c678dd]">public class</span> <span class="text-[#e5c07b]">UserController</span> &#123;
     
-    <span class="text-primary">@Id</span>
-    <span class="text-primary">@Column</span>(name = <span class="text-green-400">"id"</span>)
-    <span class="text-[#c678dd]">private</span> <span class="text-[#56b6c2]">Long</span> id;
+    <span class="text-primary">@Post</span>(<span class="text-green-400">"/register"</span>)
+    <span class="text-primary">@Sanitize</span> <span class="text-neutral/50">// Anti-injection natif</span>
+    <span class="text-[#c678dd]">public</span> <span class="text-[#56b6c2]">Response</span> <span class="text-[#61afef]">register</span>(
+        <span class="text-primary">@Body</span> <span class="text-[#56b6c2]">UserDTO</span> dto
+    ) <span class="text-[#c678dd]">throws</span> <span class="text-[#56b6c2]">SecurityException</span> &#123;
 
-    <span class="text-primary">@Column</span>(name = <span class="text-green-400">"username"</span>)
-    <span class="text-[#c678dd]">private</span> <span class="text-[#56b6c2]">String</span> username;
-    
-    <span class="text-neutral/50">// L'ORM gère dynamiquement l'insertion</span>
-    <span class="text-neutral/50">// via l'API de réflexion Java</span>
-    <span class="text-[#c678dd]">public void</span> <span class="text-[#61afef]">save</span>() <span class="text-[#c678dd]">throws</span> <span class="text-[#56b6c2]">ORMException</span> &#123;
-        <span class="text-[#c678dd]">super</span>.<span class="text-[#61afef]">save</span>(); 
+        <span class="text-neutral/50">// Data sanitization automatique</span>
+        <span class="text-neutral/50">// Validation + échappement intégrés</span>
+        <span class="text-[#56b6c2]">User</span> user = <span class="text-[#c678dd]">new</span> <span class="text-[#e5c07b]">User</span>(dto);
+        user.<span class="text-[#61afef]">save</span>();
+        <span class="text-[#c678dd]">return</span> Response.<span class="text-[#61afef]">created</span>(user);
     &#125;
 &#125;</code></pre>
         </div>

@@ -11,10 +11,10 @@ import hay from "../assets/img/hayPolitika.jpg"
 
 
 export const SITE_CONFIG: SiteConfig = {
-  title: "Herimbola RAZANAKOTO — full-stack backend java / typescript",
+  title: "Herimbola RAZANAKOTO — Ingénieur Logiciel & DevSecOps",
   author: "Herimbola RAZANAKOTO",
   description:
-    "Salut, je suis Herimbola — Bienvenue ! Développeur Java et Fullstack passionné par le code et les technologies émergentes.",
+    "Ingénieur logiciel Fullstack et passionné de Cybersécurité & DevSecOps. J'intègre la sécurité dès la conception (Secure by Design) et réalise des tests d'intrusion pour garantir la résilience des applications.",
   lang: "fr",
   siteLogo: pdpMini,
   navLinks: [
@@ -31,43 +31,43 @@ export const SITE_CONFIG: SiteConfig = {
     { text: "Email", href: "mailto:hasinkasina@gmail.com" },
   ],
   socialImage: "/zen-og.png",
-  canonicalURL: "https://astro-zen.vercel.app",
+  canonicalURL: "https://herimbola.vercel.app",
 };
 
 export const SITE_CONTENT: SiteContent = {
   hero: {
     name: "Herimbola RAZANAKOTO",
-    specialty: "full-stack backend-oriented developer",
+    specialty: "Ingénieur Logiciel & DevSecOps",
     summary:
-      "Hi, I'm Herimbola — Welcome! Java Developer and Fullstack enthusiast, passionate about coding and emerging technologies. I'm constantly seeking new challenges in dynamic environments where I can sharpen my technical skills and apply my knowledge in real-world projects. Addict to game and dev — I build, I break, I learn, and I grow.",
+      "Ingénieur logiciel Fullstack et étudiant en Master big data, je combine une expertise backend robuste avec une forte spécialisation en Cybersécurité et DevSecOps. J'intègre la sécurité dès la conception (Secure by Design) et réalise régulièrement des tests d'intrusion (pentesting) pour garantir la résilience et la protection des données sur des écosystèmes complexes.",
     email: "hasinkasina@gmail.com",
   },
   experience: [
     {
       company: "Ichtus IT",
-      position: "Backend Developer",
-      startDate: "julay 2025",
-      endDate: "present",
+      position: "Développeur Fullstack",
+      startDate: "juillet 2025",
+      endDate: "septembre 2026",
       summary: [
-        "With a strong background in development, I have led the creation of numerous complex applications, working closely with all stakeholders throughout the software lifecycle. My role extends beyond simply delivering features; I am actively involved in the continuous optimization of code and application performance to ensure robust and scalable solutions.",
-        "As a full-stack developer, my expertise extends beyond the backend. I possess comprehensive skills to design and deploy entire ecosystems, including the development of user interfaces (front-office) and advanced administration tools (back-office).",
-        "This comprehensive vision is based on advanced expertise in data architecture. I therefore participate in the design and modeling of structured and unstructured databases, ensuring optimal information management, whether through SQL or NoSQL environments.",
+        "Conception des APIs backend, intégration front–back, création d'interfaces mobiles et web. Fort d'une solide expérience en développement, j'ai dirigé la création de nombreuses applications complexes, en collaborant étroitement avec toutes les parties prenantes tout au long du cycle de vie logiciel.",
+        "Réalisation de tests d'intrusion (pentesting) réguliers sur les infrastructures et les applications web/mobiles pour identifier et corriger les vulnérabilités (OWASP Top 10). Sécurisation proactive des écosystèmes par modélisation des menaces et exécution de tests manuels basés sur des scénarios d'abus (Abuse cases).",
+        "Contribution à la conception de bases de données, incluant la modélisation des données, la définition des relations entre les tables, ainsi que l'optimisation des structures pour assurer performance et cohérence des systèmes d'information.",
       ],
     },
     {
       company: "Freelancer",
-      position: "Independent Full-Stack Developer Consultant",
-      startDate: "january 2025",
-      endDate: "present",
+      position: "Développeur SaaS Freelance",
+      startDate: "janvier 2025",
+      endDate: "aujourd'hui",
       summary: [
-        "Working in tandem with a colleague, I manage the entire lifecycle of client projects, from sales prospecting to technical delivery. We work on a diverse range of digital solutions, from the creation of showcase websites and custom management platforms to the design of complex microservices-based architectures."
+        "Développeur freelance spécialisé dans la création de solutions SaaS sur mesure pour les entreprises. Conception d'applications web modernes, performantes et sécurisées pour automatiser et optimiser les activités professionnelles.",
       ],
     },
 
   ],
   skills: [
     {
-      name: "Programming Languages",
+      name: "Langages de programmation",
       icon: "code",
       items: ["Java", "PHP", "C#", "C", "JavaScript", "Python", "HTML/CSS", "SQL", "Dart"],
     },
@@ -82,7 +82,7 @@ export const SITE_CONTENT: SiteContent = {
       items: ["Spring Boot", "Laravel", "NestJS"],
     },
     {
-      name: "Database",
+      name: "Base de données",
       icon: "database",
       items: ["Oracle", "PostgreSQL", "MySQL", "SQL Server", "MongoDB", "Firebase"],
     },
@@ -92,7 +92,12 @@ export const SITE_CONTENT: SiteContent = {
       items: ["React Native", "Expo Go", "Flutter"],
     },
     {
-      name: "Tools & DevOps",
+      name: "Cybersécurité & DevSecOps",
+      icon: "shield",
+      items: ["OWASP Top 10", "OWASP ZAP", "Nmap", "SQLmap", "Pentesting", "Secure by Design", "JWT / RBAC", "Data Sanitization"],
+    },
+    {
+      name: "Outils & DevOps",
       icon: "tool",
       items: ["Git/GitHub", "Docker", "Figma", "Adobe XD", "Photoshop", "PostGIS", "WSL", "Airflow"],
     },
@@ -103,13 +108,13 @@ export const SITE_CONTENT: SiteContent = {
       projects: [
         {
           name: "Holy Appli",
-          summary: "Plateforme digitale de traçabilité et certification agricole SPG. Écosystème numérique complet avec backoffice Next.js et application mobile Flutter.",
+          summary: "Plateforme digitale de traçabilité et certification agricole SPG. Écosystème numérique complet avec backoffice Next.js et application mobile Flutter. Sécurisation proactive par tests d'intrusion réguliers (OWASP ZAP, Nmap, SQLmap) et modélisation des menaces.",
           i18nKey: "proj.holy.summary",
           image: holy
         },
         {
           name: "Hay Politika",
-          summary: "Plateforme digitale complète (Back Office, Front Office, Mobile) pour une école. Backend développé en NestJS avec conception de l'architecture serveur et des APIs REST.",
+          summary: "Plateforme digitale complète (Back Office, Front Office, Mobile) pour une école. Backend développé en NestJS avec conception de l'architecture serveur et des APIs REST sécurisées.",
           i18nKey: "proj.hay.summary",
           image: hay
         }
@@ -120,7 +125,7 @@ export const SITE_CONTENT: SiteContent = {
       projects: [
         {
           name: "Écosystème Digital \"Stefan Mall\"",
-          summary: "Plateforme web multi-tenant (MEAN stack) dédiée à la gestion d'un centre commercial avec tableau de bord analytique et interface optimisée.",
+          summary: "Plateforme web multi-tenant (MEAN stack) dédiée à la gestion d'un centre commercial. Sécurisation des endpoints API contre les failles courantes (Injections, XSS, CSRF) et implémentation d'une authentification robuste (JWT, RBAC).",
           linkPreview: "https://m1p13mean-herimbola-stefan.vercel.app",
           linkSource: "https://github.com/Raboubla/mean_frontend.git",
           image: mall,
@@ -128,14 +133,14 @@ export const SITE_CONTENT: SiteContent = {
         },
         {
           name: "Outil de Stéganographie",
-          summary: "Développement d'un outil en Python permettant de dissimuler des messages texte dans des images via la modification des bits les moins significatifs (LSB).",
+          summary: "Développement d'un outil de stéganographie en Python permettant de dissimuler des messages texte dans des images via la modification des bits les moins significatifs (LSB). Mise en œuvre des principes fondamentaux de la sécurité de l'information.",
           linkSource: "https://github.com/Raboubla/Steganographie.git",
           image: steg,
           i18nKey: "proj.stegano.summary"
         },
         {
           name: "Framework Java by Raboubla",
-          summary: "Développement d'un framework Java from scratch intégrant gestion des erreurs, sécurité, ORM et moteur de templates.",
+          summary: "Développement d'un framework Java from scratch intégrant gestion des erreurs, module de sécurité intégré empêchant nativement les vulnérabilités d'injection, data sanitization, ORM et moteur de templates.",
           linkSource: "https://github.com/Raboubla/Fram.git",
           image: fram,
           i18nKey: "proj.fram.summary"
@@ -144,15 +149,14 @@ export const SITE_CONTENT: SiteContent = {
     }
   ],
   languages: [
-    { name: "Malagasy", level: "Native", percentage: 100 },
-    { name: "Français", level: "Fluent", percentage: 90 },
-    { name: "English", level: "Intermediate", percentage: 60 },
+    { name: "Malagasy", level: "Natif", percentage: 100 },
+    { name: "Français", level: "Courant", percentage: 90 },
+    { name: "English", level: "Intermédiaire", percentage: 60 },
   ],
   about: {
     description: `
-      I am a passionate Java and Full-Stack Developer with a strong interest in building modern web applications and exploring emerging technologies. I enjoy designing and developing both front-end and back-end systems, turning ideas into functional and efficient solutions. I am always eager to learn, improve my technical skills, and work on challenging projects that allow me to grow as a developer while delivering high-quality software.
+      Ingénieur logiciel Fullstack et étudiant en Master, je suis passionné par l'alliance entre le développement robuste et la cybersécurité. Mon quotidien consiste à concevoir des applications sécurisées dès la conception (Secure by Design), à réaliser des tests d'intrusion et à garantir la résilience des systèmes. Toujours avide de défis techniques, je mets un point d'honneur à concevoir un code propre, sécurisé et de haute qualité, tout en explorant les technologies émergentes et l'architecture logicielle.
     `,
     image: pdp,
   },
 };
-

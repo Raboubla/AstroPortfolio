@@ -17,9 +17,9 @@ export const translations: Record<Locale, Record<string, string>> = {
     "nav.about": "À propos",
 
     // Hero
-    "hero.specialty": "Développeur Fullstack Java / TypeScript",
+    "hero.specialty": "Ingénieur Logiciel & DevSecOps",
     "hero.summary":
-      "Salut, je suis Herimbola — Bienvenue ! Ingénieur logiciel Fullstack et étudiant en Master, je combine une expertise backend robuste (Java/Spring Boot, NestJS) et la maîtrise d'écosystèmes frontend modernes (React, Angular, Astro). Passionné par l'architecture logicielle et la sécurité, je conçois des applications web et mobiles performantes et sécurisées. Addict au gaming et au dev — je construis, je casse, j'apprends et je grandis.",
+      "Salut, je suis Herimbola — Bienvenue ! Ingénieur logiciel Fullstack et étudiant en Master big data, je combine une expertise backend robuste avec une forte spécialisation en Cybersécurité et DevSecOps. J'intègre la sécurité dès la conception (Secure by Design) et réalise régulièrement des tests d'intrusion (pentesting) pour garantir la résilience et la protection des données sur des écosystèmes complexes. Addict au gaming et au dev — je construis, je casse, j'apprends et je grandis.",
     "hero.cta": "Me contacter",
     "hero.download": "Télécharger le CV",
 
@@ -29,25 +29,25 @@ export const translations: Record<Locale, Record<string, string>> = {
     "section.projects": "Projets réalisés",
     "section.languages": "Langues",
     "section.about": "À propos de moi",
-    "section.framework": "Maîtrise Backend",
+    "section.framework": "Maîtrise Backend & Sécurité",
 
     // Experience — Ichtus IT
-    "exp.0.position": "Ingénieur logiciel Fullstack",
+    "exp.0.position": "Développeur Fullstack",
     "exp.0.startDate": "juillet 2025",
-    "exp.0.endDate": "aujourd'hui",
+    "exp.0.endDate": "septembre 2026",
     "exp.0.summary.0":
-      "Fort d'une solide expérience en développement, j'ai dirigé la création de nombreuses applications complexes, en collaborant étroitement avec toutes les parties prenantes tout au long du cycle de vie logiciel. Mon rôle va au-delà de la simple livraison de fonctionnalités ; je suis activement impliqué dans l'optimisation continue du code et des performances applicatives pour garantir des solutions robustes et évolutives.",
+      "Conception des APIs backend, intégration front–back, création d'interfaces mobiles et web. Fort d'une solide expérience en développement, j'ai dirigé la création de nombreuses applications complexes, en collaborant étroitement avec toutes les parties prenantes tout au long du cycle de vie logiciel.",
     "exp.0.summary.1":
-      "En tant que développeur full-stack, mon expertise s'étend au-delà du backend. Je possède les compétences complètes pour concevoir et déployer des écosystèmes entiers, incluant le développement d'interfaces utilisateur (front-office) et d'outils d'administration avancés (back-office).",
+      "Réalisation de tests d'intrusion (pentesting) réguliers sur les infrastructures et les applications web/mobiles pour identifier et corriger les vulnérabilités (OWASP Top 10). Sécurisation proactive des écosystèmes par modélisation des menaces et exécution de tests manuels basés sur des scénarios d'abus (Abuse cases).",
     "exp.0.summary.2":
-      "Cette vision globale repose sur une expertise avancée en architecture de données. Je participe donc à la conception et à la modélisation de bases de données structurées et non structurées, assurant une gestion optimale de l'information, que ce soit via des environnements SQL ou NoSQL.",
+      "Contribution à la conception de bases de données, incluant la modélisation des données, la définition des relations entre les tables, ainsi que l'optimisation des structures pour assurer performance et cohérence des systèmes d'information.",
 
     // Experience — Freelancer
-    "exp.1.position": "Consultant Développeur Full-Stack Indépendant",
+    "exp.1.position": "Développeur SaaS Freelance",
     "exp.1.startDate": "janvier 2025",
     "exp.1.endDate": "aujourd'hui",
     "exp.1.summary.0":
-      "Travaillant en duo avec un collègue, je gère le cycle de vie complet des projets clients, de la prospection commerciale à la livraison technique. Nous travaillons sur une gamme variée de solutions digitales, de la création de sites vitrines et de plateformes de gestion sur mesure à la conception d'architectures complexes basées sur des microservices.",
+      "Développeur freelance spécialisé dans la création de solutions SaaS sur mesure pour les entreprises. Conception d'applications web modernes, performantes et sécurisées pour automatiser et optimiser les activités professionnelles.",
 
 
     // Skills categories
@@ -56,25 +56,26 @@ export const translations: Record<Locale, Record<string, string>> = {
     "skills.2.name": "Backend",
     "skills.3.name": "Base de données",
     "skills.4.name": "Mobile",
-    "skills.5.name": "Outils & DevOps",
+    "skills.5.name": "Cybersécurité & DevSecOps",
+    "skills.6.name": "Outils & DevOps",
 
     // Projects
-    "proj.holy.summary": "Plateforme digitale de traçabilité et certification agricole SPG. Écosystème numérique complet avec backoffice Next.js et application mobile Flutter.",
-    "proj.hay.summary": "Plateforme digitale complète (Back Office, Front Office, Mobile) pour une école. Backend développé en NestJS avec conception de l'architecture serveur et des APIs REST.",
-    "proj.stefan.summary": "Plateforme web multi-tenant (MEAN stack) dédiée à la gestion d'un centre commercial avec tableau de bord analytique et interface optimisée.",
-    "proj.stegano.summary": "Développement d'un outil en Python permettant de dissimuler des messages texte dans des images via la modification des bits les moins significatifs (LSB).",
-    "proj.fram.summary": "Développement d'un framework Java from scratch intégrant gestion des erreurs, sécurité, ORM et moteur de templates.",
+    "proj.holy.summary": "Plateforme digitale de traçabilité et certification agricole SPG. Écosystème numérique complet avec backoffice Next.js et application mobile Flutter. Sécurisation proactive par tests d'intrusion réguliers (OWASP ZAP, Nmap, SQLmap) et modélisation des menaces.",
+    "proj.hay.summary": "Plateforme digitale complète (Back Office, Front Office, Mobile) pour une école. Backend développé en NestJS avec conception de l'architecture serveur et des APIs REST sécurisées.",
+    "proj.stefan.summary": "Plateforme web multi-tenant (MEAN stack) dédiée à la gestion d'un centre commercial. Sécurisation des endpoints API contre les failles courantes (Injections, XSS, CSRF) et implémentation d'une authentification robuste (JWT, RBAC).",
+    "proj.stegano.summary": "Développement d'un outil de stéganographie en Python permettant de dissimuler des messages texte dans des images via la modification des bits les moins significatifs (LSB). Mise en œuvre des principes fondamentaux de la sécurité de l'information.",
+    "proj.fram.summary": "Développement d'un framework Java from scratch intégrant gestion des erreurs, module de sécurité intégré empêchant nativement les vulnérabilités d'injection, data sanitization, ORM et moteur de templates.",
     "projects.source": "Source",
     "projects.preview": "Aperçu",
 
     // Framework Highlight
-    "framework.badge": "Framework Java Custom",
-    "framework.title": "Architecture sur mesure",
-    "framework.desc": "Pour consolider mon expertise backend, j'ai développé un framework Java de A à Z. Il intègre un moteur ORM personnalisé utilisant l'API de réflexion, ainsi qu'un système centralisé de gestion des exceptions. Ce projet démontre ma capacité à concevoir des architectures robustes et à maîtriser la programmation orientée objet avancée, au-delà de la simple utilisation d'outils existants.",
+    "framework.badge": "Framework Java Sécurisé",
+    "framework.title": "Architecture sécurisée sur mesure",
+    "framework.desc": "Pour consolider mon expertise backend et cybersécurité, j'ai développé un framework Java de A à Z. Il intègre un moteur ORM personnalisé utilisant l'API de réflexion, un module de sécurité intégré empêchant nativement les vulnérabilités d'injection, ainsi qu'un système de data sanitization et de gestion centralisée des exceptions. Ce projet démontre ma capacité à concevoir des architectures robustes et sécurisées dès la conception (Secure by Design).",
     "framework.feat1": "ORM personnalisé",
-    "framework.feat2": "Gestion des exceptions",
-    "framework.feat3": "API de réflexion",
-    "framework.feat4": "Core sans dépendance",
+    "framework.feat2": "Anti-injection natif",
+    "framework.feat3": "Data Sanitization",
+    "framework.feat4": "Secure by Design",
     "framework.github": "Voir sur GitHub",
 
     // Languages
@@ -84,7 +85,7 @@ export const translations: Record<Locale, Record<string, string>> = {
 
     // About
     "about.description":
-      "Ingénieur logiciel Fullstack et étudiant en Master, je suis un développeur passionné par l'alliance entre la robustesse du backend (Java, Spring Boot, NestJS) et l'agilité des interfaces modernes (React, Next.js, Flutter). Mon quotidien consiste à transformer des concepts complexes en solutions scalables, sécurisées et performantes, du modèle de données jusqu'à l'expérience utilisateur. Toujours avide de défis techniques, je mets un point d'honneur à concevoir un code propre et de haute qualité, tout en continuant à explorer les technologies émergentes et l'architecture logicielle.",
+      "Ingénieur logiciel Fullstack et étudiant en Master, je suis passionné par l'alliance entre le développement robuste et la cybersécurité. Mon quotidien consiste à concevoir des applications sécurisées dès la conception (Secure by Design), à réaliser des tests d'intrusion et à garantir la résilience des systèmes. Passionné par l'architecture logicielle et la sécurité offensive, je mets un point d'honneur à concevoir un code propre, sécurisé et de haute qualité, tout en explorant les technologies émergentes et les nouvelles surfaces d'attaque.",
     // WhatsApp
     "whatsapp.tooltip": "Discutons de votre projet",
 
@@ -106,9 +107,9 @@ export const translations: Record<Locale, Record<string, string>> = {
     "nav.about": "About",
 
     // Hero
-    "hero.specialty": "Fullstack Java / TypeScript Developer",
+    "hero.specialty": "Software Engineer & DevSecOps",
     "hero.summary":
-      "Hi, I'm Herimbola — Welcome! Fullstack Software Engineer and Master's student, I combine a robust backend expertise (Java/Spring Boot, NestJS) with a mastery of modern frontend ecosystems (React, Angular, Astro). Passionate about software architecture and security, I build high-performance, secure web and mobile applications. Addict to gaming and dev — I build, I break, I learn, and I grow.",
+      "Hi, I'm Herimbola — Welcome! Fullstack Software Engineer and Master's student in big data, I combine robust backend expertise with a strong specialization in Cybersecurity and DevSecOps. I integrate security from the design phase (Secure by Design) and regularly perform penetration testing (pentesting) to ensure the resilience and data protection of complex ecosystems. Addict to gaming and dev — I build, I break, I learn, and I grow.",
     "hero.cta": "Get in Touch",
     "hero.download": "Download CV",
 
@@ -118,25 +119,25 @@ export const translations: Record<Locale, Record<string, string>> = {
     "section.projects": "Featured Projects",
     "section.languages": "Languages",
     "section.about": "About Me",
-    "section.framework": "Backend Mastery",
+    "section.framework": "Backend & Security Mastery",
 
     // Experience — Ichtus IT
-    "exp.0.position": "Fullstack Software Engineer",
+    "exp.0.position": "Fullstack Developer",
     "exp.0.startDate": "july 2025",
-    "exp.0.endDate": "present",
+    "exp.0.endDate": "september 2026",
     "exp.0.summary.0":
-      "With a strong background in development, I have led the creation of numerous complex applications, working closely with all stakeholders throughout the software lifecycle. My role extends beyond simply delivering features; I am actively involved in the continuous optimization of code and application performance to ensure robust and scalable solutions.",
+      "Backend API design, front–back integration, and creation of mobile and web interfaces. With a strong development background, I led the creation of numerous complex applications, working closely with all stakeholders throughout the software lifecycle.",
     "exp.0.summary.1":
-      "As a full-stack developer, my expertise extends beyond the backend. I possess comprehensive skills to design and deploy entire ecosystems, including the development of user interfaces (front-office) and advanced administration tools (back-office).",
+      "Regular penetration testing (pentesting) on infrastructures and web/mobile applications to identify and remediate vulnerabilities (OWASP Top 10). Proactive ecosystem security through threat modeling and execution of manual tests based on abuse case scenarios.",
     "exp.0.summary.2":
-      "This comprehensive vision is based on advanced expertise in data architecture. I therefore participate in the design and modeling of structured and unstructured databases, ensuring optimal information management, whether through SQL or NoSQL environments.",
+      "Contribution to database design, including data modeling, defining table relationships, and optimizing structures to ensure performance and consistency of information systems.",
 
     // Experience — Freelancer
-    "exp.1.position": "Independent Full-Stack Developer Consultant",
+    "exp.1.position": "Freelance SaaS Developer",
     "exp.1.startDate": "january 2025",
     "exp.1.endDate": "present",
     "exp.1.summary.0":
-      "Working in tandem with a colleague, I manage the entire lifecycle of client projects, from sales prospecting to technical delivery. We work on a diverse range of digital solutions, from the creation of showcase websites and custom management platforms to the design of complex microservices-based architectures.",
+      "Freelance developer specialized in creating custom SaaS solutions for businesses. Designing modern, high-performance, and secure web applications to automate and optimize professional activities.",
 
 
     // Skills categories
@@ -145,25 +146,26 @@ export const translations: Record<Locale, Record<string, string>> = {
     "skills.2.name": "Backend",
     "skills.3.name": "Database",
     "skills.4.name": "Mobile",
-    "skills.5.name": "Tools & DevOps",
+    "skills.5.name": "Cybersecurity & DevSecOps",
+    "skills.6.name": "Tools & DevOps",
 
     // Projects
-    "proj.holy.summary": "Digital platform for SPG agricultural traceability and certification. Complete digital ecosystem with Next.js backoffice and Flutter mobile app.",
-    "proj.hay.summary": "Complete digital platform (Back Office, Front Office, Mobile) for a school. Backend developed in NestJS with server architecture design and REST APIs.",
-    "proj.stefan.summary": "Multi-tenant web platform (MEAN stack) dedicated to shopping mall management with an analytical dashboard and optimized interface.",
-    "proj.stegano.summary": "Development of a Python tool for hiding text messages within images by modifying the least significant bits (LSB).",
-    "proj.fram.summary": "Development of a Java framework from scratch integrating error handling, security, ORM, and a template engine.",
+    "proj.holy.summary": "Digital platform for SPG agricultural traceability and certification. Complete digital ecosystem with Next.js backoffice and Flutter mobile app. Proactive security through regular penetration testing (OWASP ZAP, Nmap, SQLmap) and threat modeling.",
+    "proj.hay.summary": "Complete digital platform (Back Office, Front Office, Mobile) for a school. Backend developed in NestJS with server architecture design and secure REST APIs.",
+    "proj.stefan.summary": "Multi-tenant web platform (MEAN stack) dedicated to shopping mall management. API endpoint security against common vulnerabilities (Injections, XSS, CSRF) and robust authentication implementation (JWT, RBAC).",
+    "proj.stegano.summary": "Development of a Python steganography tool for hiding text messages within images by modifying the least significant bits (LSB). Implementation of fundamental information security principles.",
+    "proj.fram.summary": "Development of a Java framework from scratch integrating error handling, a built-in security module natively preventing injection vulnerabilities, data sanitization, ORM, and a template engine.",
     "projects.source": "Source",
     "projects.preview": "Preview",
 
     // Framework Highlight
-    "framework.badge": "Custom Java Framework",
-    "framework.title": "Bespoke Architecture",
-    "framework.desc": "To solidify my backend expertise, I developed a Java framework from scratch. It features a custom ORM engine utilizing the Reflection API, along with a centralized exception handling system. This project demonstrates my ability to design robust architectures and master advanced object-oriented programming, moving beyond the simple use of existing tools.",
+    "framework.badge": "Secure Java Framework",
+    "framework.title": "Bespoke Secure Architecture",
+    "framework.desc": "To solidify my backend and cybersecurity expertise, I developed a Java framework from scratch. It features a custom ORM engine utilizing the Reflection API, a built-in security module that natively prevents injection vulnerabilities, along with a data sanitization system and centralized exception handling. This project demonstrates my ability to design robust architectures that are secure by design.",
     "framework.feat1": "Custom ORM",
-    "framework.feat2": "Exception Handling",
-    "framework.feat3": "Reflection API",
-    "framework.feat4": "Zero-dependency Core",
+    "framework.feat2": "Native Anti-Injection",
+    "framework.feat3": "Data Sanitization",
+    "framework.feat4": "Secure by Design",
     "framework.github": "View on GitHub",
 
     // Languages
@@ -173,7 +175,7 @@ export const translations: Record<Locale, Record<string, string>> = {
 
     // About
     "about.description":
-      "As a Fullstack Software Engineer and Master's student, I am passionate about bridging the gap between robust backend architectures (Java, Spring Boot, NestJS) and agile modern interfaces (React, Next.js, Flutter). My daily routine involves transforming complex concepts into scalable, secure, and high-performance solutions, from data modeling down to the user experience. Always eager for technical challenges, I thrive on writing clean, high-quality code while continuously exploring emerging technologies and software architecture.",
+      "As a Fullstack Software Engineer and Master's student, I am passionate about bridging robust development with cybersecurity. My daily routine involves designing applications that are secure by design, performing penetration testing, and ensuring system resilience. Passionate about software architecture and offensive security, I thrive on writing clean, secure, and high-quality code while continuously exploring emerging technologies and new attack surfaces.",
     // WhatsApp
     "whatsapp.tooltip": "Let's discuss your project",
 
