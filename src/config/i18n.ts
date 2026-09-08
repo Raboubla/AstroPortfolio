@@ -49,14 +49,6 @@ export const translations: Record<Locale, Record<string, string>> = {
     "exp.1.summary.0":
       "Travaillant en duo avec un collègue, je gère le cycle de vie complet des projets clients, de la prospection commerciale à la livraison technique. Nous travaillons sur une gamme variée de solutions digitales, de la création de sites vitrines et de plateformes de gestion sur mesure à la conception d'architectures complexes basées sur des microservices.",
 
-    // Experience — Bio Mada
-    "exp.2.position": "Associé stratégique & Responsable de la Transformation Digitale",
-    "exp.2.startDate": "décembre 2025",
-    "exp.2.endDate": "aujourd'hui",
-    "exp.2.summary.0":
-      "Responsable de la définition et de l'exécution de la stratégie commerciale et marketing. Je supervise l'identité de marque et déploie des campagnes publicitaires ciblées. Mon rôle inclut également l'analyse des tendances du marché et l'exploitation des données (Data Analysis) pour guider les décisions stratégiques de l'entreprise.",
-    "exp.2.summary.1":
-      "Je dirige la transformation numérique de l'entreprise en concevant des outils digitaux sur mesure. Mon travail se concentre sur l'automatisation des processus internes, notamment via la mise en place de solutions CRM et l'informatisation des modules de gestion des ventes et des stocks, afin d'accroître l'efficacité opérationnelle.",
 
     // Skills categories
     "skills.0.name": "Langages de programmation",
@@ -146,14 +138,6 @@ export const translations: Record<Locale, Record<string, string>> = {
     "exp.1.summary.0":
       "Working in tandem with a colleague, I manage the entire lifecycle of client projects, from sales prospecting to technical delivery. We work on a diverse range of digital solutions, from the creation of showcase websites and custom management platforms to the design of complex microservices-based architectures.",
 
-    // Experience — Bio Mada
-    "exp.2.position": "Strategic Partner & Head of Digital Transformation",
-    "exp.2.startDate": "december 2025",
-    "exp.2.endDate": "present",
-    "exp.2.summary.0":
-      "Responsible for defining and executing the sales and marketing strategy. I oversee brand identity and deploy targeted advertising campaigns. My role also includes analyzing market trends and leveraging data (Data Analysis) to guide the company's strategic decisions.",
-    "exp.2.summary.1":
-      "I lead the company's digital transformation by designing bespoke digital tools. My work focuses on automating internal processes, particularly through the implementation of CRM solutions and the computerization of sales and inventory management modules, in order to increase operational efficiency.",
 
     // Skills categories
     "skills.0.name": "Programming Languages",

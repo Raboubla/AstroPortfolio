@@ -63,16 +63,7 @@ export const SITE_CONTENT: SiteContent = {
         "Working in tandem with a colleague, I manage the entire lifecycle of client projects, from sales prospecting to technical delivery. We work on a diverse range of digital solutions, from the creation of showcase websites and custom management platforms to the design of complex microservices-based architectures."
       ],
     },
-    {
-      company: "Bio Mada",
-      position: "Strategic Partner & Head of Digital Transformation",
-      startDate: "december 2025",
-      endDate: "present",
-      summary: [
-        "Responsible for defining and executing the sales and marketing strategy. I oversee brand identity and deploy targeted advertising campaigns. My role also includes analyzing market trends and leveraging data (Data Analysis) to guide the company's strategic decisions.",
-        "I lead the company's digital transformation by designing bespoke digital tools. My work focuses on automating internal processes, particularly through the implementation of CRM solutions and the computerization of sales and inventory management modules, in order to increase operational efficiency.",
-      ]
-    },
+
   ],
   skills: [
     {
