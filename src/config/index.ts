@@ -1,6 +1,6 @@
 import type { SiteConfig, SiteContent } from "../types";
-import pdp from "../assets/img/pdp.jpg";
-import pdpMini from "../assets/img/pdp-Mini.jpg"
+import pdp from "../assets/img/pdp.jpeg";
+import pdpMini from "../assets/img/pdp-Mini.jpeg"
 import bioMada from "../assets/img/bio-mada.png"
 import fram from "../assets/img/framework.jpg"
 import mall from "../assets/img/stefan-mall.png"
