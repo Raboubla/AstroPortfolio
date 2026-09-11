@@ -17,9 +17,9 @@ export const translations: Record<Locale, Record<string, string>> = {
     "nav.about": "À propos",
 
     // Hero
-    "hero.specialty": "Ingénieur Logiciel & DevSecOps",
+    "hero.specialty": "Ingénieur Logiciel & Cybersécurité",
     "hero.summary":
-      "Salut, je suis Herimbola — Bienvenue ! Ingénieur logiciel Fullstack et étudiant en Master big data, je combine une expertise backend robuste avec une forte spécialisation en Cybersécurité et DevSecOps. J'intègre la sécurité dès la conception (Secure by Design) et réalise régulièrement des tests d'intrusion (pentesting) pour garantir la résilience et la protection des données sur des écosystèmes complexes. Addict au gaming et au dev — je construis, je casse, j'apprends et je grandis.",
+      "Salut, je suis Herimbola — Bienvenue ! Ingénieur logiciel orienté backend (Java/Node.js) et étudiant en Master Big Data, je combine une expertise en développement robuste avec une forte spécialisation en cybersécurité applicative. J'intègre la sécurité dès la phase de conception (approche Shift-Left, Secure by Design) et réalise régulièrement des tests d'intrusion (pentesting) pour garantir la résilience des écosystèmes logiciels complexes. Addict au gaming et au dev — je construis, je casse, j'apprends et je grandis.",
     "hero.cta": "Me contacter",
     "hero.download": "Télécharger le CV",
 
@@ -32,7 +32,7 @@ export const translations: Record<Locale, Record<string, string>> = {
     "section.framework": "Maîtrise Backend & Sécurité",
 
     // Experience — Ichtus IT
-    "exp.0.position": "Ingénieur logiciel & DevSecOps",
+    "exp.0.position": "Développeur Fullstack",
     "exp.0.startDate": "juillet 2025",
     "exp.0.endDate": "septembre 2026",
     "exp.0.summary.0":
@@ -56,7 +56,7 @@ export const translations: Record<Locale, Record<string, string>> = {
     "skills.2.name": "Backend",
     "skills.3.name": "Base de données",
     "skills.4.name": "Mobile",
-    "skills.5.name": "Cybersécurité & DevSecOps",
+    "skills.5.name": "Cybersécurité Applicative",
     "skills.6.name": "Outils & DevOps",
 
     // Projects
@@ -85,7 +85,7 @@ export const translations: Record<Locale, Record<string, string>> = {
 
     // About
     "about.description":
-      "Ingénieur logiciel Fullstack et étudiant en Master, je suis passionné par l'alliance entre le développement robuste et la cybersécurité. Mon quotidien consiste à concevoir des applications sécurisées dès la conception (Secure by Design), à réaliser des tests d'intrusion et à garantir la résilience des systèmes. Passionné par l'architecture logicielle et la sécurité offensive, je mets un point d'honneur à concevoir un code propre, sécurisé et de haute qualité, tout en explorant les technologies émergentes et les nouvelles surfaces d'attaque.",
+      "Ingénieur logiciel orienté backend et étudiant en Master, je suis passionné par l'alliance entre le développement robuste et la cybersécurité applicative. Mon quotidien consiste à concevoir des applications sécurisées dès la conception (Shift-Left, Secure by Design), à réaliser des tests d'intrusion et à garantir la résilience des systèmes. Passionné par l'architecture logicielle et la sécurité offensive, je mets un point d'honneur à concevoir un code propre, sécurisé et de haute qualité, tout en explorant les technologies émergentes et les nouvelles surfaces d'attaque.",
     // WhatsApp
     "whatsapp.tooltip": "Discutons de votre projet",
 
@@ -107,9 +107,9 @@ export const translations: Record<Locale, Record<string, string>> = {
     "nav.about": "About",
 
     // Hero
-    "hero.specialty": "Software Engineer & DevSecOps",
+    "hero.specialty": "Software Engineer & Cybersecurity",
     "hero.summary":
-      "Hi, I'm Herimbola — Welcome! Fullstack Software Engineer and Master's student in big data, I combine robust backend expertise with a strong specialization in Cybersecurity and DevSecOps. I integrate security from the design phase (Secure by Design) and regularly perform penetration testing (pentesting) to ensure the resilience and data protection of complex ecosystems. Addict to gaming and dev — I build, I break, I learn, and I grow.",
+      "Hi, I'm Herimbola — Welcome! Backend-oriented Software Engineer (Java/Node.js) and Master's student in Big Data, I combine robust development expertise with a strong specialization in application security. I integrate security from the design phase (Shift-Left approach, Secure by Design) and regularly perform penetration testing (pentesting) to ensure the resilience of complex software ecosystems. Addict to gaming and dev — I build, I break, I learn, and I grow.",
     "hero.cta": "Get in Touch",
     "hero.download": "Download CV",
 
@@ -122,7 +122,7 @@ export const translations: Record<Locale, Record<string, string>> = {
     "section.framework": "Backend & Security Mastery",
 
     // Experience — Ichtus IT
-    "exp.0.position": "Software Ingeneer & DevSecOps",
+    "exp.0.position": "Fullstack Developer",
     "exp.0.startDate": "july 2025",
     "exp.0.endDate": "september 2026",
     "exp.0.summary.0":
@@ -146,7 +146,7 @@ export const translations: Record<Locale, Record<string, string>> = {
     "skills.2.name": "Backend",
     "skills.3.name": "Database",
     "skills.4.name": "Mobile",
-    "skills.5.name": "Cybersecurity & DevSecOps",
+    "skills.5.name": "Application Security",
     "skills.6.name": "Tools & DevOps",
 
     // Projects
@@ -175,7 +175,7 @@ export const translations: Record<Locale, Record<string, string>> = {
 
     // About
     "about.description":
-      "As a Fullstack Software Engineer and Master's student, I am passionate about bridging robust development with cybersecurity. My daily routine involves designing applications that are secure by design, performing penetration testing, and ensuring system resilience. Passionate about software architecture and offensive security, I thrive on writing clean, secure, and high-quality code while continuously exploring emerging technologies and new attack surfaces.",
+      "As a backend-oriented Software Engineer and Master's student, I am passionate about bridging robust development with application security. My daily routine involves designing applications that are secure by design (Shift-Left approach), performing penetration testing, and ensuring system resilience. Passionate about software architecture and offensive security, I thrive on writing clean, secure, and high-quality code while continuously exploring emerging technologies and new attack surfaces.",
     // WhatsApp
     "whatsapp.tooltip": "Let's discuss your project",
 

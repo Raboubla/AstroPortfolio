@@ -11,10 +11,10 @@ import hay from "../assets/img/hayPolitika.jpg"
 
 
 export const SITE_CONFIG: SiteConfig = {
-  title: "Herimbola RAZANAKOTO — Ingénieur Logiciel & DevSecOps",
+  title: "Herimbola RAZANAKOTO — Ingénieur Logiciel & Cybersécurité",
   author: "Herimbola RAZANAKOTO",
   description:
-    "Ingénieur logiciel Fullstack et passionné de Cybersécurité & DevSecOps. J'intègre la sécurité dès la conception (Secure by Design) et réalise des tests d'intrusion pour garantir la résilience des applications.",
+    "Ingénieur logiciel orienté backend (Java/Node.js) avec une forte spécialisation en cybersécurité applicative. J'intègre la sécurité dès la phase de conception (Shift-Left, Secure by Design) et réalise des tests d'intrusion pour garantir la résilience des applications.",
   lang: "fr",
   siteLogo: pdpMini,
   navLinks: [
@@ -37,15 +37,15 @@ export const SITE_CONFIG: SiteConfig = {
 export const SITE_CONTENT: SiteContent = {
   hero: {
     name: "Herimbola RAZANAKOTO",
-    specialty: "Ingénieur Logiciel & DevSecOps",
+    specialty: "Ingénieur Logiciel & Cybersécurité",
     summary:
-      "Ingénieur logiciel Fullstack et étudiant en Master big data, je combine une expertise backend robuste avec une forte spécialisation en Cybersécurité et DevSecOps. J'intègre la sécurité dès la conception (Secure by Design) et réalise régulièrement des tests d'intrusion (pentesting) pour garantir la résilience et la protection des données sur des écosystèmes complexes.",
+      "Ingénieur logiciel orienté backend (Java/Node.js) et étudiant en Master Big Data, je combine une expertise en développement robuste avec une forte spécialisation en cybersécurité applicative. J'intègre la sécurité dès la phase de conception (approche Shift-Left, Secure by Design) et réalise régulièrement des tests d'intrusion (pentesting) pour garantir la résilience des écosystèmes logiciels complexes.",
     email: "hasinkasina@gmail.com",
   },
   experience: [
     {
       company: "Ichtus IT",
-      position: "Ingénieur logiciel & DevSecOps",
+      position: "Développeur Fullstack",
       startDate: "juillet 2025",
       endDate: "septembre 2026",
       summary: [
@@ -92,9 +92,9 @@ export const SITE_CONTENT: SiteContent = {
       items: ["React Native", "Expo Go", "Flutter"],
     },
     {
-      name: "Cybersécurité & DevSecOps",
+      name: "Cybersécurité Applicative",
       icon: "shield",
-      items: ["OWASP Top 10", "OWASP ZAP", "Nmap", "SQLmap", "Pentesting", "Secure by Design", "JWT / RBAC", "Data Sanitization"],
+      items: ["OWASP Top 10", "OWASP ZAP", "Nmap", "SQLmap", "Pentesting", "Shift-Left Security", "Secure by Design", "JWT / RBAC", "Data Sanitization"],
     },
     {
       name: "Outils & DevOps",
